@@ -1,0 +1,16 @@
+<model-viewer src="a_pluto33.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+    <button class="Hotspot" slot="hotspot-2" data-position="0.052515341986732425m 1.7095325762109155m 0.004438754363812208m" data-normal="-0.3274329762826956m 0.5093378846059441m 0.7958407914575614m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Pluto</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="0.058829765653953356m 1.689589672187387m 0.007265949056574568m" data-normal="-0.31517281475562253m 0.005946210137413627m 0.9490156686925776m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Armrest</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>

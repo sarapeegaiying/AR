@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="stitch1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.1721933170702599m 0.37183628640207433m -0.038284772174025886m" data-normal="-0.16637100864723936m -0.1794822032180762m 0.9695910613293036m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Guitar</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.02157596889993102m 0.6239906856399917m 0.06313195622862541m" data-normal="-0.036618974717401616m 0.6081136659526487m 0.7930049306103191m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Stitch</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="0.11482000305851858m 0.16985948879792534m -0.10315707427469092m" data-normal="0.8492007596577615m -0.317921618976692m 0.4216442979383454m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Small stool</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="-0.338469502364417m 0.06352527343600518m -0.019467416927933703m" data-normal="-0.3717293979156694m 0.926481130849488m 0.058736435924456695m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Stage</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
